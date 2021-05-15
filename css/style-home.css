@@ -1,0 +1,592 @@
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*For PCs*/
+@media screen and (min-width: 1200px) {
+  .header {
+    overflow: hidden;
+    background-color: royalblue;
+    padding: 20px 10px;
+  }
+
+  .header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+  }
+
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    margin: 0 0 0 200px;
+  }
+
+  .header a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .header a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  #search-icon {
+    float: left;
+  }
+
+  .header-right {
+   /* display: inline-block;*/
+    /*float: left;*/
+    margin: 0 50px 0 500px;
+  }
+
+  .head-image {
+    width: 100%;
+    height: 400px;
+    /*background-image: url("../images/Banner.jpg");
+    background-size: cover;*/
+  }
+
+  #about-us {
+    width: 80%;
+    height: 300px;
+    margin: 10px 10% 10px 10%;
+  }
+
+  section #div-1 {
+    width:50%;
+    height:100%;
+    float: left;
+  }
+
+  section #div-2  {
+    width: 50%;
+    height: 100%;
+    float:right;
+  }
+
+  .center-image {
+    height: 400px;
+    margin: 20px 0;
+  }
+
+  #banner {
+    position: relative;
+  }
+
+  .our-business {
+    position: absolute;
+    top: 50px;
+    left: 54%;
+    color: white;
+  }
+
+  .our-business ul {
+    margin: 0 0 0 -100px;
+  }
+
+  .icon {
+    height: 5%;
+    width: 5%;
+    float: left;
+  }
+
+  .consulting {
+    margin: 0 0 0 60px;
+  }
+
+  .consulting a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+  }
+
+  #center-image-1 {
+    /*background-image: url("../images/About Us 2.jpg");*/
+    width:50%;
+    height: 100%;
+    float: left;
+  }
+
+  #center-image-2 {
+    /*background-image: url("../images/Communication.jpg");*/
+    width:50%;
+    height: 100%;
+    float: right;
+  }
+
+  #center {
+    width: 900px 100%;
+    height: 550px;
+    margin: 10px 200px;
+  }
+
+/*  article #div-1 {
+    width: 33%;
+    border:solid 1px black;
+    display: inline-block;
+  }
+
+  article #div-2 {
+    width: 33%;
+    border:solid 1px black;
+    display: inline-block;
+  }
+
+  article #div-3 {
+    width: 33%;
+    border:solid 1px black;
+    display: inline-block;
+    float: right;
+  }*/
+
+  #contact {
+    width: 900px 100%;
+    margin: 10px 200px;
+  }
+
+  #div-contact-1 {
+    width: 50%;
+    height: 300px;
+    float: left;
+  }
+
+  #div-contact-2 {
+    width: 50%;
+    height: 300px;
+    float: right
+  }
+
+  #map {
+    width: 100%;height: 50%
+  }
+
+  #button-send {
+    margin: 0px 400px;
+    padding: 10px 30px;
+    background-color:orange;
+    color: white;
+    border: 2px solid #4CAF50;
+    text-overflow: ellipsis;
+    overflow: visible;
+    white-space: nowrap;
+  }
+
+  #button-send-2 {
+    display: none;
+  }
+
+  input {
+    height: 20px;
+    width: 100px;
+    margin: 10px;
+  }
+
+  footer {
+    width: 100%;
+    height: 300px;
+    background-color: black;
+  }
+
+  footer #div-footer {
+    width: 25%;
+    height: 100%;
+    color: white;
+    display: inline-block;
+    float: left
+  }
+
+  .footer {
+    width: 80%;
+    height: 80%;
+    /*border: solid white 2px;*/
+    margin: 20px 100px;
+  }
+
+  .footer a {
+    text-decoration: none;
+    color: white;
+    font-family: arial;
+    font-size: 12px;
+  }
+
+  .div-footer {
+    width: 25%;
+    height: 100%;
+    color: white;
+    display: inline-block;
+    float: left;
+  }
+
+  .div-footer ul {
+    list-style-type: none;
+  }
+
+  .footer p {
+    font-family: arial;
+    font-size: 12px;
+  }
+
+  .icon::before {
+   content:'\f105';
+   font-family:'Font Awesome 5 Free'
+   font-weight:900;
+  }
+
+  #name-form {
+    width: 150px;
+  }
+  #submit-button {
+    color: black;
+  }
+  .copyright {
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+}
+
+/*For tablets*/
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .dropdown {
+    display: none;
+  }
+  .header {
+    overflow: hidden;
+    background-color: royalblue;
+    /*padding: 20px 10px;*/
+  }
+
+  .header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 14px; 
+    line-height: 25px;
+    border-radius: 4px;
+  }
+
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    margin: 0 0 0 100px;
+  }
+
+  .header a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .header a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+
+  #search-icon {
+    float: left;
+  }
+  
+  .head-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  #about-us {
+    margin: 10px 20px 10px 20px;
+  }
+
+  #about-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  #center-image-1 {
+    width: 100%;
+    height: 100%;
+  }
+
+  #center-image-2 {
+    width: 100%;
+    height: 300px;
+  }
+
+  #banner {
+    position: relative;
+  }
+
+  .our-business {
+    position: absolute;
+    top: 70%;
+    left: 10px;
+    color: white;
+  }
+
+  .our-business a {
+    color: white;
+    font-size: 1.5em;
+  }
+
+  .icon {
+    height: 8%;
+    width: 8%;
+    float: left;
+  }
+
+  .consulting {
+    margin: 0 0 0 60px;
+  }
+
+  .consulting h5 {
+    font-weight: bold;
+    font-size: 17px;
+  }
+
+  #center {
+    margin: 10px 20px;
+  }
+
+  #contact {
+    margin: 10px 20px;
+  }
+
+  #div-contact-1 input {
+    width: 200px;
+    margin: 5px;
+  }
+
+  #map {
+    width: 100%;
+    height: 100%;
+  }
+
+  #button-send-2 {
+    margin: 0px 100px;
+    padding: 10px 30px;
+    background-color:orange;
+    color: white;
+    border: 2px solid #4CAF50;
+    text-overflow: ellipsis;
+    overflow: visible;
+    white-space: nowrap;
+  }
+
+  .footer {
+    margin: 20px 0 0 0;
+    padding: 10px;
+    background-color: black;
+    color: white;
+  }
+
+  .div-footer ul {
+    list-style-type: none;
+  }
+  .div-footer a {
+    color: white;
+  }
+
+  #name-form {
+    width: 90%;
+  }
+  #submit-button {
+    color: black;
+  }
+  .copyright {
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+}
+
+/*For phones*/
+@media screen and (max-width: 767px) {
+ 
+  .header-right {
+    display: none;
+  }
+
+  .head-image {
+    height: 150px;
+    width: 100%;
+  }
+
+  .header {
+    width: 100%;
+    height: 50px;
+    display: inline-block;
+  }
+
+  .header .dropdown {
+    float: left;
+    margin: 5px 0px 5px 10px;
+  }
+
+  .header .logo {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 15px 50px 5px 100px;
+  }
+
+  #search-icon {
+    float: right;
+    margin: 5px 30px 5px 0px;
+  }
+
+  #about-us {
+    width: 100%;
+    height: 500px;
+  }
+
+  #about-us #div-2 {
+    width: 100%;
+    height: 200px;
+  }
+
+  #about-image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .center-image {
+    height: 500px;
+    width: 100%;
+    /*margin: 50px 0 0 0;*/
+  }
+
+  #center-image-1 {
+    width: 100%;
+    height: 200px;
+  }
+
+  #center-image-2 {
+    width: 100%;
+    height: 400px;
+  }
+
+  #banner {
+    position: relative;
+  }
+
+  .our-business {
+    position: absolute;
+    top: 200px;
+    left: 10px;
+    color: white;
+  }
+
+  /*.our-business a {
+    color: white;
+  }*/
+
+  .icon {
+    height: 15%;
+    width: 15%;
+    float: left;
+  }
+
+  .consulting {
+    margin: 0 0 0 60px;
+  }
+
+  .consulting h5 {
+    font-weight: bold;
+    font-size: 17px;
+  }
+
+  article {
+    margin: 150px 0 0 0;
+  }
+
+  #center {
+    width: 100%;
+    height: 1000px;
+    margin: 10px 10px;
+  }
+
+  #contact {
+    margin: 10px 10px;
+  }
+
+  #div-contact-1 h4 {
+    font-weight: bold;
+  }
+
+  #div-contact-1 input {
+    margin: 5px 5px 5px 5px;
+  }
+
+  #map {
+    width: 100%;
+    height: 100%;
+  }
+
+  #button-send-2 {
+    display: none;
+  }
+
+  #button-send {
+    /*margin: 0px 100px;*/
+    padding: 5px 15px;
+    background-color:orange;
+    color: white;
+    border: 2px solid #4CAF50;
+    text-overflow: ellipsis;
+    overflow: visible;
+    white-space: nowrap;
+  }
+
+  footer {
+    margin: 10px 10px;
+  }
+
+  .footer {
+    margin: 20px 0 0 0;
+    background-color: black;
+    color: white;
+  }
+
+  .div-footer ul {
+    list-style-type: none;
+  }
+
+  .footer a {
+    text-decoration: none;
+    color: white;
+    /*font-family: arial;
+    font-size: 12px;*/
+  }
+
+  .footer a.visited {
+    text-decoration: none;
+    color: white;
+    /*font-family: arial;
+    font-size: 12px;*/
+  }
+
+  #submit-button {
+    color: black;
+  }
+
+  .copyright {
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+}
